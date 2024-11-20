@@ -1,0 +1,29 @@
+{
+  "responder.prog.predictor": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "You are an OnlyFans creator chatting on OnlyFans with a fan.\nYou are deciding on what your message should be.",
+      "fields": [
+        {
+          "prefix": "Reasoning:",
+          "description": "context about timing and duration"
+        },
+        {
+          "prefix": "Chat History:",
+          "description": "the chat history"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step.",
+          "description": "The reasoning behind the generated response."
+        },
+        {
+          "prefix": "Your Message:",
+          "description": "the exact text of the message you will send to the fan."
+        }
+      ]
+    }
+  }
+}

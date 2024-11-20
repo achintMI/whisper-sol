@@ -22,11 +22,11 @@ def backoff_hdlr(details):
 
 class Together(HFModel):
     def __init__(
-        self,
-        model,
-        api_base="",
-        api_key="",
-        **kwargs,
+            self,
+            model,
+            api_base="",
+            api_key="",
+            **kwargs,
     ):
         super().__init__(model=model, is_client=True)
         self.session = requests.Session()
@@ -68,4 +68,3 @@ class Together(HFModel):
                 print(f"resp_json:{response.json}")
             print(f"Failed to parse JSON response: {e}")
             raise Exception("Received invalid JSON response from server")
-
